@@ -3,3 +3,48 @@ body {
   font-size: 1.1em;
   color: #555;
 }
+
+
+figure {
+  display: flex;
+}
+
+.original {
+  padding-right: 40px;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+  padding-right: 40px;
+}
+
+.blur {
+  filter: blur(2px);
+  padding-right: 40px;
+}
+
+.invert {
+  filter: invert(100%);
+  padding-right: 40px;
+}
+
+.brightness {
+  filter: brightness(0.5);
+  padding-right: 40px;
+}
+
+.saturation {
+  filter: saturate(200%);
+  padding-right: 40px;
+}
+
+.mixed {
+  filter: grayscale(100%) blur(2px);
+  padding-right: 40px;
+}
+
+figcaption {
+  text-align: left;
+  padding-bottom: 30px;
+  padding-right: 40px;
+}
