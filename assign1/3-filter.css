@@ -4,7 +4,6 @@ body {
   color: #555;
 }
 
-
 figure {
   display: flex;
 }
@@ -35,6 +34,11 @@ figure {
 
 .saturation {
   filter: saturate(200%);
+  padding-right: 40px;
+}
+
+.sepia {
+  filter: sepia(100%);
   padding-right: 40px;
 }
 
