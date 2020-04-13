@@ -4,51 +4,38 @@ body {
   color: #555;
 }
 
-figure {
-  display: flex;
-}
-
-.original {
-  padding-right: 40px;
+.grid-container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .grayscale {
   filter: grayscale(100%);
-  padding-right: 40px;
 }
 
 .blur {
   filter: blur(2px);
-  padding-right: 40px;
 }
 
 .invert {
   filter: invert(100%);
-  padding-right: 40px;
 }
 
 .brightness {
   filter: brightness(0.5);
-  padding-right: 40px;
 }
 
 .saturation {
   filter: saturate(200%);
-  padding-right: 40px;
 }
 
 .sepia {
   filter: sepia(100%);
-  padding-right: 40px;
 }
 
 .mixed {
   filter: grayscale(100%) blur(2px);
-  padding-right: 40px;
 }
 
-figcaption {
-  text-align: left;
-  padding-bottom: 30px;
-  padding-right: 40px;
-}
