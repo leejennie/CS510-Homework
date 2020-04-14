@@ -23,20 +23,26 @@ nav ul {
 
 /*styling list elements*/
 nav li {
-  display: inline;
-  padding: 20px;
+  display: inline-block;
+  line-height: 35px;
+  width: 150px;
 }
-
+  
 nav a {
   color: #ffffff;
   text-decoration: none;
   padding: 10px 10px; /*sets padding of links to be even*/
   text-align: center;
-  vertical-align: middle;
   font-size: 70%;
-  display: inline-block;
+  display: block;
 }
 
-nav a:hover {
-  background-color: rgb(43, 179, 167);
+nav a:hover, nav a:focus {
+  background-color: rgb(43, 179, 167, 0.8);
+}
+
+@media (max-width: 500px) {
+  nav li {
+    width: 100%;
+  }
 }
