@@ -12,3 +12,40 @@
 }
 
 /* Add your code here */
+
+.grid-item {
+  padding-bottom: 50px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item10 {
+  order: -1;
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.item4 {
+  grid-column: span 2;
+}
+
+.item2 {
+  grid-row: span 2;
+}
+
+.item9 {
+  grid-column: span 4;
+}
+
+.item5 {
+  grid-column: span 1;
+}
+
+.item6 {
+  grid-column: span 1;
+}
