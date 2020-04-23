@@ -29,26 +29,22 @@ ul {
 
 li {
   text-align: center;
+}
+
+.week-days {
   font-weight: 600;
 }
 
-.days {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  text-align: center;
-}
-
-.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10,.item11, .item12, .item13, .item14, .item15, .item16, .item17, .item18, .item19, .item20, .item21, .item22, .item23, .item24, .item25, .item26, .item27, .item28, .item29, .item30, .item31 {
+.grid-item {
+  display: flex;
   background-color: rgba(206, 204, 204, 0.856);
   color: black;
-  text-align: center;
   padding: 30px;
-
+  text-align: center;
+  align-items: center; 
+  justify-content: center;
 }
 
 .item1 {
   grid-column: 4;
 }
-
