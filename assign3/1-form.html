@@ -8,8 +8,49 @@
     <title>JavaScript Form Exercise</title>
   </head>
   <body>
-    <h3>Step 1 - insert your previous form here</h3>
-    <h3>Step 2 - address any responsiveness and/or accessibility issues</h3>
+    <!-- <h3>Step 1 - insert your previous form here</h3>
+    <h3>Step 2 - address any responsiveness and/or accessibility issues</h3> -->
+
+    <!-- Form code from assignment 1 -->
+    <form onsubmit="return submitted_results();">
+      <h1>INTRO SURVEY</h1> 
+        <label for="name"><b>Name</b></label>
+        <label for="required">(required)</label><br>
+        <input type="text" id="name" name="name" required /> <br><br>
+        <label for="email"><b>Email</b></label>
+        <label for="required">(required)</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <fieldset>
+          <legend>Registration Status:</legend><br>
+          <select id="registration" name="registration">
+            <option value="registered">Registered</option>
+            <option value="waitlist">Waitlist</option>
+            <option value="other">Other</option>
+          </select><br><br>
+        </fieldset>
+        <fieldset>  
+          <legend>Class Section:</legend><br>
+          <input type="radio" id="class1" name="class" value="class1">
+          <label for="class1">CS 410P</label> 
+          <input type="radio" id="class2" name="class" value="class2">
+          <label for="class2">CS 510</label><br><br>
+        </fieldset> 
+        <fieldset>
+          <legend>Have you taken any of the following courses?</legend><br>
+          <input type="checkbox" id="course1" name="course" value="Programming Languages">
+          <label for="course1">Programming Languages</label><br>
+          <input type="checkbox" id="course2" name="course" value="Operating Systems">
+          <label for="course2">Operating Systems</label><br>
+          <input type="checkbox" id="course3" name="course" value="Full Stack Web Development">
+          <label for="course3">Full Stack Web Development</label><br><br>
+        </fieldset>  
+        <fieldset>
+          <legend>Anything else?</legend>
+          <textarea id="anythingelse" rows="5" cols="50"></textarea><br><br>
+          <input type="submit" value="Submit"><input type="reset" value="Reset">
+        </fieldset>  
+    </form>
+
     <script src="1-form.js"></script>
   </body>
 </html>
