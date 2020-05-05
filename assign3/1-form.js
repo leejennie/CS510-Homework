@@ -1,6 +1,8 @@
 // Enter your code here
 
-function submitted_results() {
+function submitted_results(event) {
+
+    event.preventDefault();
 
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
