@@ -1,9 +1,9 @@
 // Enter your code here
 
-function url_parsing(){
+function url_parsing(event){
     
     //CODE TO PARSE STRING
-    event.preventDefault(event);
+    event.preventDefault();
     
     var url_input = document.getElementById("comments").value;
 
