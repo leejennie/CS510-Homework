@@ -22,10 +22,10 @@
       </div>
       <div class="form-group">
         <label for="interval">Background change interval (seconds): </label>
-        <input type="number" value="3" id="interval" disabled />
+        <input type="number" value="3" id="interval" />
       </div>
       <div class="form-group mt-4">
-        <input type="submit" class="btn btn-danger" value="Stop" />
+        <input type="submit" id="Submit" class="btn btn-danger" value="Stop" onclick="stopstart(event)" />
       </div>
     </form>
     <script src="6-background.js"></script>
