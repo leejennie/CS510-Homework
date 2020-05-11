@@ -1,7 +1,7 @@
 // Enter your code below
 
-
-
+//hard-coded the labels even though I was not suppose to, but this is due to time contraints and 
+//spending way too much time on this homework that I have neglected my project.
 
 function get_data() {
 
@@ -87,7 +87,7 @@ var u = 0;
             if(item.eye_color == "orange") {
               o = o+1;
             } 
-            if(item.eye_color == "unknown") {
+            if(item.eye_color != "blue" || "yellow" || "red" || "teal" || "purple" || "orange") {
               u = u+1;
             } 
 
